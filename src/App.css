@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  /* background-color: red; */
+  background-color: #0e547e;
+  background-image: linear-gradient(66deg, #0e547e 0%, #72d4ca 100%);
   min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content{
+
+  min-height: 300px;
+  width: 400px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+   text-align: center;
+}
+
+#clearButton{
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+    transition: all 1s;
+}
+
+#clearButton:hover {
+  background-color: teal;
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.addItems{
+  display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: end;
+    
+   
+  
+  
+}
+.addItems input{
+    width: 100%;
+    padding: 10px;
+    /* color: black; */
+    border: none;
+    border-radius: 10px;
+
+}
+.addItems i{
+  position: absolute;
+}
+.icon{
+    padding: 10px;
+    margin-left: 2px;
+    min-width: 30px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.icon:hover{
+  transform: scale(1.1);
+  color: black;
+  border-bottom: black solid 0.5px;
+}
+
+.showItems{
+background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  height: 16rem;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+.eachItem{
   color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 0.5rem;
+  background-color: teal;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
